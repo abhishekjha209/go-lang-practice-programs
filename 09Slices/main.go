@@ -24,7 +24,7 @@ func main() {
 	fruitList = append(fruitList[1:2])
 	fmt.Println(fruitList)
 
-
+	// Using make statement
 	highscores := make([]int, 4)
 
 	highscores[0] = 65
