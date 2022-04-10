@@ -17,9 +17,13 @@ func main() {
 	fmt.Println(fruitList)
 
 	// Slicing in slices.
-	fmt.Println(fruitList[1:])
-	fmt.Println(fruitList[:3])
-	fmt.Println(fruitList[1:2])
+	fruitList = append(fruitList[1:])
+	fmt.Println(fruitList)
+	fruitList = append(fruitList[:3])
+	fmt.Println(fruitList)
+	fruitList = append(fruitList[1:2])
+	fmt.Println(fruitList)
+
 
 	highscores := make([]int, 4)
 
@@ -35,5 +39,12 @@ func main() {
 	sort.Ints(highscores)
 	fmt.Println(highscores)
 	fmt.Println(sort.IntsAreSorted(highscores))
+
+	// Removing items to the list.
+	var courses = []string{"reactjs", "javascript", "swift", "python", "ruby"}
+	fmt.Println(courses)
+	var index int = 2
+	courses = append(courses[:index], courses[index+1:]...)
+	fmt.Println(courses)
 
 }
