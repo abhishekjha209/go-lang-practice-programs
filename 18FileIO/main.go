@@ -11,7 +11,7 @@ func main() {
 	fmt.Println("Welcome to files in golang")
 	content := "This needs to go in a file - LearnCodeOnline.in"
 
-	file, err := os.Create("./mylcogofile.txt")
+	file, err := os.Create("./mylcogofile.txt") // Make sure to close the file.
 
 	// if err != nil {
 	// 	panic(err)
